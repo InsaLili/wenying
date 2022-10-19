@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "@remix-run/react";
 
 export const Header = () => (
-  <section className="h-[300px] w-full bg-[url('/bg.png')] bg-cover bg-top p-4">
+  <section className="h-[200px] w-full bg-[url('/bg.png')] bg-cover bg-top p-4 sm:h-[300px]">
     <div className="flex">
       <div className="w-48">
         <img src="/logo.png" alt="Logo" />
