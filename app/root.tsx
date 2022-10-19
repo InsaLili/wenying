@@ -1,8 +1,6 @@
-import type {
-  LinksFunction,
-  LoaderArgs,
-  MetaFunction,
-} from "@remix-run/node";
+import React from "react";
+
+import type { LinksFunction, LoaderArgs, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
   Links,
@@ -13,11 +11,11 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import tailwindStylesheetUrl from "./styles/tailwind.css";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "问盈咨询" };
 };
 
 export const links: LinksFunction = () => {
@@ -28,7 +26,7 @@ export async function loader({ request }: LoaderArgs) {
   return json({
     user: await getUser(request),
   });
-};
+}
 
 export default function App() {
   return (
