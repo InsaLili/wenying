@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Advantages } from "~/components/Advantages";
 import { Business } from "~/components/Business";
 import { Description } from "~/components/Description";
 import { Header } from "~/components/Header";
@@ -10,6 +11,7 @@ export default function Index() {
       <Header />
       <Description />
       <Business />
+      <Advantages />
     </main>
   );
 }

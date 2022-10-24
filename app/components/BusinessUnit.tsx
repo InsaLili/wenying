@@ -11,7 +11,7 @@ export const BusinessUnit = (props: BusinessUnitProps) => {
   return (
     <div className="relative w-36">
       <img
-        src="./corner.png"
+        src="./img/corner.png"
         alt="corner"
         className="absolute left-[-10px] top-[-6px] w-4"
       />
