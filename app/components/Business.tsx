@@ -3,7 +3,7 @@ import React from "react";
 import { BusinessUnit } from "./BusinessUnit";
 
 export const Business = () => (
-  <section className="bg-slate-600 text-white relative p-8 sm:h-[250px] sm:px-36 sm:py-20">
+  <section className="relative bg-slate-600 p-8 text-white sm:h-[250px] sm:px-36 sm:py-20">
     <div className="items-self-center grid grid-cols-2 gap-x-6 gap-y-10 justify-self-center sm:grid-cols-3">
       <BusinessUnit
         text1="管理咨询"

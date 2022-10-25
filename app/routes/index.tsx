@@ -3,7 +3,9 @@ import React from "react";
 import { Advantages } from "~/components/Advantages";
 import { Business } from "~/components/Business";
 import { Description } from "~/components/Description";
+import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
+import { PeopleGallery } from "~/components/PeopleGallery";
 
 export default function Index() {
   return (
@@ -12,6 +14,8 @@ export default function Index() {
       <Description />
       <Business />
       <Advantages />
+      <PeopleGallery />
+      <Footer />
     </main>
   );
 }

@@ -15,10 +15,10 @@ export const BusinessUnit = (props: BusinessUnitProps) => {
         alt="corner"
         className="absolute left-[-10px] top-[-6px] w-4"
       />
-      <div>{text1}</div>
-      <div className="text-xs">{text2}</div>
+      <div className="sm:text-lg">{text1}</div>
+      <div className="md:text-md text-xs">{text2}</div>
       <br />
-      <div className="text-xs">{text3}</div>
+      <div className="md:text-md text-xs">{text3}</div>
     </div>
   );
 };
