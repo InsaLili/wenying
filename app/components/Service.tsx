@@ -4,7 +4,7 @@ import ServiceCircle from "./ServiceCircle";
 import ServiceDiamond from "./ServiceDiamond";
 
 export const Service = () => (
-  <section className="flex w-full flex-col items-center justify-center overflow-hidden bg-[url('/img/bg-service.png')] bg-cover bg-top p-6 md:h-[450px]">
+  <section className="mb-8 flex w-full flex-col items-center justify-center overflow-hidden bg-[url('/img/bg-service.png')] bg-cover bg-top p-6 md:h-[450px]">
     <div className="text-md mb-8 text-center font-bold text-neutral-600 md:text-2xl">
       以常年顾问服务为核心，全方位赋能客户业绩增长能客户业绩增⻓
     </div>
