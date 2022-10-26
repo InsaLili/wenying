@@ -2,6 +2,7 @@ import React from "react";
 
 import { Advantages } from "~/components/Advantages";
 import { Business } from "~/components/Business";
+import { Cases } from "~/components/Cases";
 import { Client } from "~/components/Client";
 import { Description } from "~/components/Description";
 import { Footer } from "~/components/Footer";
@@ -19,6 +20,7 @@ export default function Index() {
       <PeopleGallery />
       <Service />
       <Client />
+      <Cases />
       <Footer />
     </main>
   );

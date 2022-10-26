@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Client = () => (
-  <section className="flex w-full flex-col items-center p-8 text-neutral-500">
+  <section className="mb-8 flex w-full flex-col items-center p-4 text-neutral-500">
     <div className="flex max-w-[1200px] flex-col items-center">
       <div className="mb-8 border-b-4 border-wy-green text-lg sm:text-3xl">
         我们的客户

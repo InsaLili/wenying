@@ -18,8 +18,8 @@ export const AdvantageUnit = (props: AdvantageUnitProps) => {
       </div>
       <div className="md:text-md h-36 text-sm sm:px-6">{description}</div>
       <div className={clsx("grid gap-4", columns)}>
-        {logos.map((url) => (
-          <img src={url} alt={url} />
+        {logos.map((url, index) => (
+          <img key={index} src={url} alt={url} />
         ))}
       </div>
     </div>
