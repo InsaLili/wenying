@@ -6,6 +6,7 @@ import { Description } from "~/components/Description";
 import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { PeopleGallery } from "~/components/PeopleGallery";
+import { Service } from "~/components/Service";
 
 export default function Index() {
   return (
@@ -15,6 +16,7 @@ export default function Index() {
       <Business />
       <Advantages />
       <PeopleGallery />
+      <Service />
       <Footer />
     </main>
   );

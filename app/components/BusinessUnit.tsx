@@ -9,7 +9,7 @@ export type BusinessUnitProps = {
 export const BusinessUnit = (props: BusinessUnitProps) => {
   const { text1, text2, text3 } = props;
   return (
-    <div className="relative w-36">
+    <div className="relative">
       <img
         src="./img/corner.png"
         alt="corner"
