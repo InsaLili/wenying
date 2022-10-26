@@ -10,10 +10,10 @@ export const Client = () => (
         累计服务企业超100+ / 覆盖10+行业领域 / 拥有一批⻓期战略合作伙伴 按月支付
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <img src="/img/clients.png" alt="clients" />
+        <img src="/img/clients.png" alt="clients" className="w-full" />
         <div className="flex flex-col items-center justify-center bg-slate-600 p-2 text-white md:p-8">
           <div className="mb-8 text-xl">客户评价</div>
-          <img src="/img/review.png" alt="review" />
+          <img src="/img/review.png" alt="review" className="w-full" />
         </div>
       </div>
     </div>
