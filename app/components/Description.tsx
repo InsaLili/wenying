@@ -12,7 +12,7 @@ export const Description = () => (
     </div>
     <div className="grid grid-cols-3 gap-4 p-2 sm:grid-cols-6">
       <Item img="./img/building.png" text1="80+" text2="服务企业数量" />
-      <Item img="./img/grow.png" text1="200%+" text2="客户业绩增长" />
+      <Item img="./img/grow.png" text1="20%+" text2="客户业绩增长" />
       <Item img="./img/people.png" text1="95%+" text2="咨询项目续单率" />
       <Item img="./img/group.png" text1="15+" text2="实战资深顾问" />
       <Item img="./img/people.png" text1="100+" text2="专家学者资源" />
