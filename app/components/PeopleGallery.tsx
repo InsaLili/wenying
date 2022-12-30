@@ -1,6 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { useLoaderData } from "@remix-run/react";
+import Carousel from "react-multi-carousel";
 
 import PeopleUnit from "./PeopleUnit";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 2,
+  },
+};
 
 const peopleList = [
   {
@@ -90,33 +108,26 @@ const peopleList = [
 ];
 
 export const PeopleGallery = () => {
-  const [current, setCurrent] = useState(0);
-  const handleClick = (direction: string) => {
-    const newPosition = direction === "left" ? current - 1 : current + 1;
-    setCurrent(newPosition);
-  };
+  const { deviceType } = useLoaderData();
+
   return (
     <section className="mb-8 flex w-full items-center justify-center">
-      <div className="flex max-w-[1200px] items-center justify-center">
-        <button onClick={() => handleClick("left")} className="w-28">
-          <img src="/img/Arrow-Left-icon.png" alt="arrow left" />
-        </button>
-        <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-          {peopleList.map((people, index) => (
-            <PeopleUnit
-              key={index}
-              show={index < current + 4 && index >= current}
-              photo={people.photo}
-              name={people.name}
-              title={people.title}
-              description={people.description}
-            />
-          ))}
-        </div>
-        <button onClick={() => handleClick("right")} className="w-28">
-          <img src="/img/Arrow-Right-icon.png" alt="arrow right" />
-        </button>
-      </div>
+      <Carousel
+        ssr
+        deviceType={deviceType}
+        responsive={responsive}
+        className="mb-8"
+      >
+        {peopleList.map((people, index) => (
+          <PeopleUnit
+            key={index}
+            photo={people.photo}
+            name={people.name}
+            title={people.title}
+            description={people.description}
+          />
+        ))}
+      </Carousel>
     </section>
   );
 };
